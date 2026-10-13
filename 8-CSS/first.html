@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First styling page</title>
+    <style>
+      p {
+        font-size: x-large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: blueviolet;
+        text-align: start;
+        text-decoration: underline;
+        
+      }
+      .nav {
+        list-style-type: none;
+        display: flex;
+        margin: auto;
+        justify-content: flex-end;
+        background-color: blueviolet;
+        padding: 4px;
+      }
+      .nav li {
+        margin-right: 20px;
+      }
+
+      .nav li a {
+        cursor: pointer;
+      }
+
+      .nav li a:hover {
+        color: aquamarine;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <p
+      style="
+        font-weight: 400;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+          'Lucida Sans', Arial, sans-serif;
+        color: rgb(192, 117, 26);
+        text-align: center;
+        text-decoration: underline;
+        background-color: antiquewhite;
+      "
+    >
+      Welcome
+    </p>
+
+    <ul class="nav">
+      <li><a href="">Home</a></li>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Contact Us</a></li>
+      <li><a href="">Login</a></li>
+    </ul>
+  </body>
+</html>
