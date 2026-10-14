@@ -1,0 +1,21 @@
+.col{
+    height: 400px;
+    border-style: none;
+    border-left: 2px solid green;
+    padding: 5px;
+    text-align: justify;
+   
+}
+
+.cat{
+    display :flex;
+    /* margin: 30px;
+    padding: 10px; */
+}
+ img{
+        width: 200px;
+      }
+
+      img:hover {
+        opacity: 0.5;
+      }
