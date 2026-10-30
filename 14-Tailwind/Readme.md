@@ -1,1 +1,4 @@
-- Create KBA Courses Update Course, Add Course Page , Signup Page
+- Complete KBA Cousres -30/10/2026
+- Complete certiapp - 30/10/2026
+- Complete Youtube (including dark mode) - 04/11/2026
+- Assignment - Library Management System (Tailwind)- 08/11/2026
