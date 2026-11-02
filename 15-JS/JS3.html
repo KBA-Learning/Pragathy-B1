@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let st="Hai! A very goodmorning to you all."
+        document.write("<br>The string is: ",st)
+        document.write("<br> The character at third position is: ",st[2])
+        document.write("<br> The length of string is: ",st.length)
+        document.write("<br> The character at fourth position is: ",st.charAt(3))
+        document.write("<br>Teacher wish students: ",st.substring(12,23))
+        document.write("<br>Teacher wishes students like: ",st.slice(12,23)+' '+st.slice(31))
+        let x="www.kba.ai"
+        document.write("<br>The words are:",x.split('.'))
+        document.write("<br> The string is uppercase: ",st.toUpperCase())
+        document.write("<br> The string in lowercase: ",st.toLowerCase())
+        document.write("<br> Find the location of very: ",st.search(/very /g ))
+        document.write("<br> Replace very with nice: ",st.replace(/very/g,"nice"))
+        let m="Java"
+        let n="script"
+        let k="is a very simple language"
+        document.write("<br> The language is: ",m.concat(n," ",k))
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="temp"></div>
+    <p>JavaScript is a language designed for browser. Browser can only identify html,css & JS</p>
+    <div id="noted"></div>
+    <script>
+        e1 = document.createElement("h1")
+        e1.textContent = "JavaScript"
+        d1= document.getElementById("temp")
+        d1.appendChild(e1)
+        e2=document.createElement("p")
+        e2.textContent="JavaScript mainly has 3 datatypes:"
+        e3= document.createElement("ul")
+        l1=document.createElement("li")
+        l1.textContent="Number"
+        l2=document.createElement("li")
+        l2.textContent="String"
+        l3=document.createElement("li")
+        l3.textContent="Boolean"
+        e3.appendChild(l1)
+        e3.appendChild(l2)
+        e3.appendChild(l3)
+        d2 = document.getElementById("noted")
+        d2.appendChild(e2)
+        d2.appendChild(e3)
+    </script>
+</body>
+</html>
