@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+</head>
+<body>
+    <script>
+        let a=10000,w=700,l=5000
+        if(w>a){
+            document.write("Insufficient Balance")
+        }
+        else if(w>l){
+            document.write(`Please enter an amount within ${l}`)
+        }
+        else if(w<a && w%100==0){
+            a-=w;
+            document.write(`Your balance after withdrawal is ${a}`)
+        }
+    </script>
+</body>
+</html>

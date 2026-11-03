@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+</head>
+<body>
+    <script>
+        let p=3261,d,r,a;
+        // console.log(231/100)
+        if(p>=1000 && p<=2000){
+            d = Math.floor((p*10)/100)
+            r = (p*10)%100
+        }
+        else if(p>2000 && p<=3000){
+            d=Math.floor((p*20)/100)
+            r=(p*20)%100
+        }
+        else if(p>3000 && p<=4000){
+            d = Math.floor((p*30)/100)
+            console.log("The discount is:",d)
+            r = (p*30)%100
+            console.log("The remainder:",r)
+        }
+        else if(p>4000 && p<=5000){
+            d= Math.floor((p*40)/100)
+            r= (p*40)%100
+        }
+
+        if(r>=5 && r<=9){
+            d=(d-(r*0.1))+1
+            a=p-d
+            document.write(`The amount you need to pay is: ${a}`)
+        }
+        else{
+            a=p-d
+             document.write(`The amount you need to pay is: ${a}`)
+        }
+    </script>
+</body>
+</html>
