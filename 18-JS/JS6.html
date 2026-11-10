@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[],k=10
+        for(i=0;i<6;i++){
+            a[i]=k
+            k=k+10
+        }
+        document.write("The elements in first array is: ",a)
+        let b=[]
+        for(i=0,j=5;i<6;i++,j--){
+            b[i]=a[j]
+        }
+        document.write("<br>The elements in the second array is: ",b)
+
+    </script>
+</body>
+</html>

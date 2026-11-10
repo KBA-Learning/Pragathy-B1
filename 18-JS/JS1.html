@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=231,reverse=0
+        let n=num
+        for(;num>0;num=Math.floor(num/10)){
+            r=num%10
+            reverse = (reverse*10)+r
+        }
+        document.write(`Reverse of ${n} is ${reverse}`)
+    </script>
+</body>
+</html>
