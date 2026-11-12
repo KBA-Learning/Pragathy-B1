@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Task Manager</h1>
+    <label for="task">Enter a task: </label>
+    <input type="text" id="task"> <br>
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+
+    <script>
+        const addTask=()=>{
+            const taskInput = document.getElementById('task');
+            const taskList = document.getElementById('taskList');
+            if(taskInput.value.trim()!==''){
+                const li = document.createElement('li');
+                const taskelement = document.createElement('span')
+                taskelement.textContent = taskInput.value;
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Remove Item';
+                removeButton.onclick = function(){
+                    taskList.removeChild(li);
+                };
+            
+            const editButton = document.createElement("button");
+            editButton.textContent="Edit Item"
+            editButton.onclick= function(){
+                const newLabel = prompt("Enter the new label:")
+                taskelement.textContent = newLabel
+            }
+            li.appendChild(taskelement)
+             li.appendChild(removeButton);
+             li.appendChild(editButton)
+                taskList.appendChild(li);
+                taskInput.value='';
+        }
+        }
+    </script>
+</body>
+</html>

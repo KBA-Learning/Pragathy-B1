@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Add(){
+            let element1 =Number(document.getElementById("item1").value)
+            let element2 =Number(document.getElementById("item2").value)
+            let sum = element1+element2
+            document.getElementById("sum").innerHTML = sum
+        }
+    </script>
+    <label>Enter the first number</label>
+    <input type="text" id="item1"/>
+     <label>Enter the second number</label>
+    <input type="text" id="item2"/>
+    <input type="button" onclick="Add()" value="Add"/>
+    <p id="sum"></p>
+</body>
+</html>

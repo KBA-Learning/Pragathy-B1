@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<br>Do the specific operation on 10 & 2")
+        let a='/'
+        switch(a){
+            case '+':
+                add();
+                break;
+            case '-':
+                difference();
+                break;
+            case '*':
+                multiply();
+                break;
+            case '/':
+                division();
+                break;
+            default:
+                document.write("<br>Please specify '+','-','*','/'")
+                break;
+        }
+
+        function add(){
+            let sum = 10+2
+            document.write("<br>The sum is: ",sum)
+        }
+        function difference(){
+            let diff = 10-2
+            document.write("<br>The difference is: ",diff)
+        }
+        function multiply(){
+            let p = 10*2
+            document.write("<br>The product is: ",p)
+
+        }
+        function division(){
+            let d = 10/2
+            document.write("<br>The quotient is: ",d)
+        }
+    </script>
+</body>
+</html>
