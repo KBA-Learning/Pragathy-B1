@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(i=2;i<20;i=i+2){
+            try{
+                if(i%2==0){
+                    try{
+                        num=i*2+1
+                        document.write(num)
+                    }
+                    catch(error){
+                        console.log(error)
+                    }
+                }
+            }
+            catch(error){
+                console.log(error)
+            }
+        }
+    </script>
+</body>
+</html>

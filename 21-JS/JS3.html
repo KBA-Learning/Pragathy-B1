@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function handleShow() {
+            let p = document.getElementById("show")
+            p.style.display = "block"
+            let a = document.getElementById("more")
+            a.style.display = "none"
+            let c = document.getElementById("less")
+            c.style.display = "block"
+        }
+        function handleLess() {
+            let p = document.getElementById("show")
+            p.style.display = "none"
+            let a = document.getElementById("more")
+            a.style.display = "block"
+            let c = document.getElementById("less")
+            c.style.display = "none"
+        }
+    </script>
+    <p>Munnar is a very beautiful place.It is famous for its<span style="display:none;" id="show">beautiful landscape
+            and tea plantations.Rajamalai is fampur for neelakurinji</span><span onclick="handleShow()"
+            style="display:block; color:crimson; text-decoration:underline; cursor:pointer;"  id="more">Show more...</span><span onclick="handleLess()" style="display: none;color:crimson; text-decoration:underline; cursor:pointer;"
+            id="less">Show less...</span></p>
+</body>
+
+</html>

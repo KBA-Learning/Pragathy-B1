@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[]
+
+        function addProduct(){
+            try{
+                let ele = document.getElementById("item")
+                let item = document.getElementById("item").value
+                try{
+                for(i=0;i<a.length;i++){
+                    if(a[i]==item){
+                        let inf = document.getElementById("info")
+                        inf.innerHTML="Item already present"
+                    }
+                }
+                
+                }
+                catch(error){
+                    console.log(error)
+                }
+                a.push(item)
+
+                ele.value=" "
+            }
+            catch(error){
+                console.log(error)
+            }
+        }
+
+        const handleSearch=()=>{
+            const searchitem = document.getElementById("search").value
+            console.log("The array is:",a.length)
+            console.log("The search item",searchitem)
+            let k=0
+            try{
+                for(i=0;i<=a.length;i++){
+                    console.log(a[i])
+                    if(a[i]==searchitem){
+                        cosole.log("I am inside if")
+                        k++;
+                        break;
+                        
+                    }
+                  
+                }
+                if(k==1){
+                    let res = document.getElementById("result")
+                        res.innerHTML=`${searchitem} present`
+                }
+
+                  else{
+                        
+                        let res = document.getElementById("result")
+                        res.innerHTML=`${searchitem} missing`
+                    }
+            }
+            catch(error){
+                console.log(error)
+            }
+        }
+
+    </script>
+    <label>Enter the product:</label>
+    <input type="text" id="item"/>
+    <input type="button" onclick="addProduct()" value="Add Product"/>
+    <p id="info"></p>
+    <input type="text" id="search"/>
+    <input type="button" value="Search" onclick="handleSearch()"/>
+    <p id="result"></p>
+</body>
+</html>

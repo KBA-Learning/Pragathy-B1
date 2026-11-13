@@ -33,3 +33,9 @@ Create an HTML page that accepts a number and has a button labelled "Calculate F
 Create an HTML page that accepts a number and has a button labelled "Check Prime". Write a function to check whether the entered number is prime or not.
 
 Create an HTML page for a simple shopping bill calculator. Accept the product price and quantity. Write a function to calculate the total amount. If the total amount is above ₹5000, apply a 10% discount. Display the final payable amount.
+
+ATM Simulator: Accept account balance, PIN and withdrawal amount. Check the PIN, verify sufficient balance and display the remaining balance.
+
+Image Gallery: Create three buttons with the names of three animals. On clicking each button, display the corresponding animal image.
+
+https://docs.google.com/document/d/1u3l7RwDOVewZHQ5CvN6hPiNWFoVSFUVZ_opy9F3WR_0/edit?usp=sharing
