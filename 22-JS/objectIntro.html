@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to JavaScript Objects</title>
+</head>
+<body>
+    <h1> Check Browser Console</h1>
+    <script>
+        let person={
+            name:"Anu",
+            age:22,
+            greet:function(){
+                console.log("Hello, my name is " + this.name);
+            }
+        }
+        console.log(person.name);
+        console.log(person['age']);
+        person.greet();
+        person.name="Anu Sharma";
+        console.log(person.name);
+        person.city="New Delhi";
+        console.log(person.city);
+        delete person.city;
+        console.log(person.city);
+
+        let person2={
+            name:"Ravi",
+            age:25,
+            greet:function(){
+                console.log("Hello, my name is " + this.name);
+            }
+        }
+        person2.greet();
+
+    </script>
+    
+</body>
+</html>
