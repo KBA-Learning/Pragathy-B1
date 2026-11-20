@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const products = new Map();
+
+            // 1. Add five products
+            products.set("Laptop", 50000);
+            products.set("Mobile", 20000);
+            products.set("Keyboard", 1500);
+            products.set("Mouse", 500);
+            products.set("Monitor", 12000);
+            console.log("Product Details:", products);
+            // Update the price of a product
+            products.set("Mobile", 22000);
+            // 2. Display all product details
+            // Delete a product
+            products.delete("Mouse");
+            console.log("Product Details:");
+
+            for (const item of products) {
+                    console.log(item[0] + ": " + item[1]);
+                }
+            
+            // for (const [product, price] of products) {
+            //     console.log(product + ": " + price);
+            // }
+
+            // 3. Display total number of products
+            console.log("Total Products: " + products.size);
+    </script>
+</body>
+</html>

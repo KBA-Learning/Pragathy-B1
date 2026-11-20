@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student = new Map();
+        student.set("student1", {name: "Ram", age: 20, course: "BCA"});
+        student.set("student2", {name: "Rahul", age: 22, course: "BBA"});
+        console.log("Student Details:", student);
+        student.set("student1", {name: "Ram", age: 21, course: "BCA"});
+        console.log("After Update Student Details:");
+        for (let [key, value] of student) {
+            console.log(key + " : " + value.name + ", " + value.age + ", " + value.course);
+        }
+    </script>
+</body>
+</html>

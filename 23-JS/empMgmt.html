@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee Management</title>
+</head>
+
+<body>
+
+    <h2>Employee Registration</h2>
+
+    <input type="text" id="empName" placeholder="Employee Name">
+
+    <input type="number" id="empSalary" placeholder="Salary">
+
+    <button onclick="addEmployee()">Add Employee</button>
+
+    <h3>Employee Details</h3>
+    <div id="output"></div>
+
+    <script>
+
+        // Empty array
+        let employees = [];
+
+        function addEmployee() {
+
+            // Read HTML input
+            let name = document.getElementById("empName").value;
+            let salary = Number(document.getElementById("empSalary").value);
+
+            if (!name.trim() || !Number.isFinite(salary) || salary <= 0) {
+                alert("Please enter valid employee details");
+                return;
+            }
+
+            // Create employee object
+            let employee = {
+                name: name,
+                salary: salary,
+
+                displayDetails() {
+                    return "Name: " + this.name +
+                        ", Salary: " + this.salary;
+                }
+            };
+
+            // Add object to array
+            employees.push(employee);
+
+            // Display all employees
+            let result = "";
+
+            employees.forEach(function (emp) {
+                result += emp.displayDetails() + "<br>";
+            });
+
+            document.getElementById("output").innerHTML = result;
+
+            // Clear input fields
+            document.getElementById("empName").value = "";
+            document.getElementById("empSalary").value = "";
+        }
+
+    </script>
+
+</body>
+
+</html>

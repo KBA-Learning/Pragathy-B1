@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Iterating through a Map
+    const student = new Map();
+
+    student.set("name", "Ram");
+    student.set("age", 20);
+    student.set("course", "BCA");
+
+    for (let [key, value] of student) {
+        console.log(key + " : " + value);
+    }
+
+    let a = 1;
+
+    let result = Boolean(a);
+
+    console.log(result);
+    console.log(typeof result);
+
+</script>
+</body>
+</html>
