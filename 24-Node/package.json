@@ -1,0 +1,16 @@
+{
+  "name": "23-node",
+  "version": "1.0.0",
+  "description": "",
+  "module": "type",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.18.1"
+  }
+}
